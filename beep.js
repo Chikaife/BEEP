@@ -21,7 +21,7 @@ let price = 2100000
 let cards = []
 
 function getRandomCard() {
-    return Math.floor(Math.random() * 20) + 1
+    return Math.floor(Math.random() * 13) + 1
 }
 
 function startGame() {
