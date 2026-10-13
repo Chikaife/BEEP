@@ -12,13 +12,19 @@ let playerCard = document.querySelector("#cards")
 let cardSum = document.querySelector("#sums")
 let money = document.querySelector("#cash")
 
-let balance = Number(money.textContent)
+let balance = Number(money.textContent.replace(/,/g, ""))
 
 let roundCost = 200000
 let drawCost = 100000
 let price = 2100000
 
 let cards = []
+
+function updateBalance() {
+    money.textContent = balance.toLocaleString("en-US")
+}
+
+updateBalance()
 
 function getRandomCard() {
     return Math.floor(Math.random() * 13) + 1
@@ -36,7 +42,7 @@ function startGame() {
     }
 
     balance -= roundCost
-    money.textContent = balance
+    updateBalance()
 
     firstCard = getRandomCard()
     secondCard = getRandomCard()
@@ -64,7 +70,7 @@ function drawNewCard() {
     }
 
     balance -= drawCost
-    money.textContent = balance
+    updateBalance()
 
     let newCard = getRandomCard()
 
@@ -98,7 +104,7 @@ function awardPayout() {
     }
 
     balance += price
-    money.textContent = balance
+    updateBalance()
     payoutClaimed = true
 }
 
