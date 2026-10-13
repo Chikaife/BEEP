@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to play Beep, including game costs, payouts, and balance rules.">
+    <title>About Beep</title>
+    <link rel="stylesheet" href="beep.css">
+</head>
+<body class="about-page">
+    <div class="container">
+        <h1>BEEP!</h1>
+        <div class="navi">
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="https://anyimchidi.com/#contact">Contact</a>
+            </nav>
+        </div>
+
+        <main class="about-content">
+            <header class="about-intro">
+                <p class="eyebrow">ABOUT BEEP</p>
+                <h2>A card game where every decision counts.</h2>
+                <p class="note">Beep is a browser-based card game that uses virtual credits for gameplay. Credits have no cash value and cannot be exchanged for real money. The game is designed for entertainment and programming practice.</p>
+                <p>Beep is a browser-based Blackjack game built around card values, player decisions, balance management, and fixed payouts. Start a round, receive your cards, decide whether to draw another card, and aim for a total of 21 without going over.</p>
+                <p>Every round starts with a fixed entry cost. Additional cards come with an extra charge, and a winning hand earns a fixed payout. Your balance changes as you play, so every decision affects your remaining funds.</p>
+            </header>
+
+            <section>
+                <h2>How to Play</h2>
+
+                <h3>1. Start a Round</h3>
+                <p>Select <strong>Start Game</strong> to begin a new round. The game deducts 200,000 credits from your balance and deals two cards.</p>
+                <p>You need enough credits to cover the entry cost before a round begins.</p>
+
+                <h3>2. Check Your Cards</h3>
+                <p>Your cards and their combined value appear on the game screen. Your goal is to reach a total of 21.</p>
+                <ul>
+                    <li><strong>Below 21:</strong> Your hand is still active.</li>
+                    <li><strong>Exactly 21:</strong> You win the round.</li>
+                    <li><strong>Above 21:</strong> You lose the round.</li>
+                </ul>
+
+                <h3>3. Draw Another Card</h3>
+                <p>Select <strong>Draw New Card</strong> when you want another card. Each additional draw costs 100,000 credits.</p>
+                <p>Every new card changes your total. Consider your current sum before drawing again.</p>
+
+                <h3>4. Collect Your Payout</h3>
+                <p>A winning hand earns a fixed payout of 2,100,000 credits. The payout is added to your remaining balance.</p>
+                <p>A losing hand ends the round without a payout.</p>
+
+                <h3>5. Start Another Round</h3>
+                <p>Select <strong>New Game</strong> to clear the previous hand and prepare for another round. Your remaining balance carries forward.</p>
+            </section>
+
+            <section>
+                <h2>Game Costs and Payouts</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Action</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Start a round</td>
+                                <td>200,000 credits</td>
+                            </tr>
+                            <tr>
+                                <td>Draw an additional card</td>
+                                <td>100,000 credits</td>
+                            </tr>
+                            <tr>
+                                <td>Win a round</td>
+                                <td>2,100,000 credits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Your balance must cover each charge before the corresponding action proceeds. If your balance falls below the required amount, the game prevents the action.</p>
+            </section>
+
+            <section>
+                <h2>Understanding Your Balance</h2>
+                <p>Your balance represents the credits available for gameplay.</p>
+                <p>Starting a round reduces your balance by 200,000 credits. Drawing another card reduces the balance by a further 100,000 credits per draw. Winning adds the fixed payout of 2,100,000 credits to your remaining balance.</p>
+                <p>Your final balance depends on your starting funds, the costs incurred, and the outcome of each round.</p>
+            </section>
+
+            <section>
+                <h2>Frequently Asked Questions</h2>
+
+                <h3>What is the objective of Beep?</h3>
+                <p>Reach a card total of 21 without exceeding the limit.</p>
+
+                <h3>How much does a round cost?</h3>
+                <p>Each round costs 200,000 credits.</p>
+
+                <h3>Does drawing another card cost extra?</h3>
+                <p>Yes. Each additional card costs 100,000 credits.</p>
+
+                <h3>What happens when I win?</h3>
+                <p>The game adds 2,100,000 credits to your remaining balance.</p>
+
+                <h3>What happens when I lose?</h3>
+                <p>The round ends, and no winning payout is awarded.</p>
+
+                <h3>What happens when I run out of credits?</h3>
+                <p>You must have enough credits to cover the cost of your next action before proceeding.</p>
+
+                <h3>Does my balance reset after every round?</h3>
+                <p>No. Your remaining balance carries into the next round while the current game session is active.</p>
+            </section>
+
+            <section>
+                <h2>Play Responsibly</h2>
+                <p>Beep uses a custom payment and payout system. The game does not follow every standard Blackjack rule, and its fixed payout does not guarantee a profit.</p>
+                <p>If Beep later supports deposits, withdrawals, or wagers involving real money, publish clear payment terms, age restrictions, and responsible gambling information before launch.</p>
+            </section>
+
+            <section class="about-cta">
+                <h2>Ready to Play?</h2>
+                <p>Return to the game, check your balance, and start a new round.</p>
+                <a class="play-link" href="index.html">Return to the game</a>
+            </section>
+
+            <section class="about-developer">
+                <h2>About the Developer</h2>
+                <p>Beep is a personal project by Anyim Chidi, a software developer interested in building useful, interactive web experiences.</p>
+                <p><a href="https://anyimchidi.com/">Visit my portfolio</a> to see more of my work.</p>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <strong>Beep</strong>
+            </div>
+            <p>Built by Anyim Chidi</p>
+            <a href="https://anyimchidi.com/">Developer portfolio ↗</a>
+            <p class="footer-disclaimer">Virtual credits only. No real-money wagering.</p>
+        </footer>
+    </div>
+</body>
+</html>
